@@ -1,0 +1,27 @@
+﻿@model TeacherAssistant.Models.Usuario
+@{
+    ViewBag.Title = "Logar no Sistema";
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Detalhes</li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(m => m.Login)
+            @Html.TextBoxFor(m => m.Login)
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(m => m.Senha)
+            @Html.PasswordFor(m => m.Senha)
+        </li>
+        <li data-role="fieldcontain">
+            <input type="submit" value="Logar" />
+        </li>
+    </ul>
+}

@@ -1,0 +1,27 @@
+﻿@model TeacherAssistant.Models.Material
+@{
+    ViewBag.Title = Model.Titulo;
+}
+<div>
+    <h3>
+        Material: @Model.Titulo</h3>
+    @Html.Partial(((TeacherAssistant.TipoMaterial)Model.Tipo).ToString(), Model)
+    <br />
+    <div class="center">
+        @if (ViewBag.PodeCurtir == true)
+        {
+        
+            <a href="@Url.Action("Curtir", "Materiais", new { id = Model.Id })">
+                <img alt="Curtir" src="@Url.Content("~/Content/images/aprovado.png")" width="64px" height="64px" />
+                Eu aprovo este Material </a>
+        
+        }
+        else
+        {
+            <p>
+                Você aprovou este material :)</p>
+            <a href="@Url.Action("DesfazerCurtida", "Materiais", new { id = Model.Id })">Desfazer
+            </a>
+        }
+    </div>
+</div>

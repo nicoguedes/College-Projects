@@ -1,0 +1,29 @@
+﻿@model Dominio.Livro
+
+@{
+    ViewBag.Title = "Excluir Livro " + @Model.Titulo;
+}
+
+<h2>Excluir Livro @Model.Titulo</h2>
+
+<h3>Tem certeza de que deseja excluir este livro?</h3>
+<fieldset>
+    <legend>Livro</legend>
+
+    <div class="display-label">Codigo</div>
+    <div class="display-field">@Model.CodLivro</div>
+
+    <div class="display-label">Titulo</div>
+    <div class="display-field">@Model.Titulo</div>
+
+    <div class="display-label">Autor</div>
+    <div class="display-field">@Model.Autor</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

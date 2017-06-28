@@ -1,0 +1,17 @@
+﻿@using BP.Resources
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biblioteca Plus - @Resources.Login_AcessoNaoAutorizado</title>
+</head>
+<body>
+	<div>
+		@Resources.Login_VoceNaoPossuiPermissao
+		<br />
+		@Html.ActionLink(@Resources.Login_VoltarPaginaInicial, "Index", new { controller = "Home", area = "" })
+	</div>
+</body>
+</html>

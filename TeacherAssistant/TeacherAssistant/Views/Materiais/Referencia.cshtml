@@ -1,0 +1,14 @@
+﻿@model TeacherAssistant.Models.Material
+@{
+    Layout = null;
+}
+<p>
+    ATENÇÃO: Este link irá te levar para outro site.
+</p>
+<br />
+<div class="center">
+    <a href="@Url.Content(Model.Url)" target="_blank">Acessar
+        <br />
+        <img alt="Acessar Link" src="@Url.Content("~/Content/images/acessar-link.png")"  width="64px" height="64px"/>
+    </a>
+</div>

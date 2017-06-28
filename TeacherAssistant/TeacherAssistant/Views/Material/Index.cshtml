@@ -1,0 +1,54 @@
+﻿@model IEnumerable<TeacherAssistant.Models.Material>
+@{
+    ViewBag.Title = "Materiais";
+}
+<p>
+    @Html.ActionLink("Incluir Material", "Create", new { idLicao = Request.QueryString["idLicao"], idAula = Request.QueryString["idAula"] })
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Url)
+        </th>
+        <th>
+            Visível
+        </th>
+        <th>
+            Postado por
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Url)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Visivel)
+            </td>
+            <td>
+                @if (item.Aluno != null)
+                {
+                    <span>@item.Aluno.Login</span>
+                }
+                else
+                { 
+                    <span>Mim</span>
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Excluir", "Delete", new { id = item.Id }, new { data_rel = "dialog" }) |
+                @Html.ActionLink("Aprovações", "VisualizarCurtidas", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>

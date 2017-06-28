@@ -1,0 +1,52 @@
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Mapping\Livro.hbm.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Mapping\Aluguel.hbm.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Mapping\Usuario.hbm.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Mapping\Carrinho.hbm.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\hibernate.cfg.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Integracao.dll.config
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Integracao.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Integracao.XmlSerializers.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Integracao.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\BP.Comum.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Dominio.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Iesi.Collections.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\MySql.Data.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\NHibernate.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\System.Data.SQLite.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\System.Data.SQLite.Linq.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\BP.Comum.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\Dominio.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\obj\Release\ResolveAssemblyReference.cache
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\obj\Release\Integracao.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\obj\Release\Integracao.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\obj\Release\Integracao.XmlSerializers.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\BP.Resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\BP.Resources.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\en\BP.Resources.resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Integracao\bin\Release\es\BP.Resources.resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Mapping\Livro.hbm.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Mapping\Aluguel.hbm.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Mapping\Usuario.hbm.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Mapping\Carrinho.hbm.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\hibernate.cfg.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Integracao.dll.config
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Integracao.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Integracao.XmlSerializers.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Integracao.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\BP.Comum.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\BP.Resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Dominio.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Iesi.Collections.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\MySql.Data.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\NHibernate.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\System.Data.SQLite.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\System.Data.SQLite.Linq.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\BP.Comum.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\Dominio.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\BP.Resources.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\en\BP.Resources.resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\bin\Release\es\BP.Resources.resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\obj\Release\BP.Integracao.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\obj\Release\Integracao.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\obj\Release\Integracao.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Integracao\obj\Release\Integracao.XmlSerializers.dll

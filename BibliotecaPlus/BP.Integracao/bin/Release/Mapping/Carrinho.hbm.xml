@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Dominio" namespace="Dominio">
+	<class name="Carrinho">
+		<id name="CodCarrinho">
+			<generator class="native" />
+		</id>
+		<many-to-one name="Usuario" />
+    <bag name="Livros"  table="LivroCarrinho" cascade="save-update" lazy="false">
+      <key column="CodCarrinho" />
+      <many-to-many class="Dominio.Livro" column="CodLivro" />
+    </bag>
+	</class>
+</hibernate-mapping>

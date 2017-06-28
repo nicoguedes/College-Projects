@@ -1,0 +1,32 @@
+﻿@model IEnumerable<TeacherAssistant.Models.Turma>
+
+@{
+    ViewBag.Title = "Turma";
+}
+
+<p>
+    @Html.ActionLink("Incluir Turma", "Create", null, new { data_role = "button", data_icon = "plus" })
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Excluir", "Delete", new { id = item.Id }, new { data_rel = "dialog" }) |
+            @Html.ActionLink("Alunos", "Alunos", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

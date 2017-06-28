@@ -1,0 +1,30 @@
+﻿@model TeacherAssistant.ViewModels.TrocaSenha
+@{
+    ViewBag.Title = "Trocar Senha";
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@using (Html.BeginForm())
+{ 
+    @Html.ValidationSummary()
+
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Senha atual e nova senha</li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.SenhaAtual)
+            @Html.PasswordFor(model => model.SenhaAtual)
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.NovaSenha)
+            @Html.PasswordFor(model => model.NovaSenha)
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.ConfirmacaoNovaSenha)
+            @Html.PasswordFor(model => model.ConfirmacaoNovaSenha)
+        </li>
+        <li data-role="fieldcontain">
+            <input type="submit" value="Salvar" />
+        </li>
+    </ul>
+}

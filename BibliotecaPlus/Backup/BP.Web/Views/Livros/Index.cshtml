@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Dominio.Livro>
+@using BP.Resources
+@{
+    ViewBag.Title = "Biblioteca Plus";
+}
+<script type="text/javascript">
+    function adicionarAoCarrinho(codigo) {
+        var jsonParameters = {};
+        jsonParameters["codigoLivro"] = codigo;
+        $.ajax({
+            data: jsonParameters,
+            url: '@Url.Action("AdicionarAoCarrinho", "Carrinho", new { area = "" })',
+            type: 'POST',
+            success: function (data) {
+                alert(data.Mensagem);
+            },
+            error: function (data) {
+                alert('@Resources.Carrinho_ErroAoAdicionarLivro');
+            }
+        });
+    }
+</script>
+@foreach (var livro in Model)
+{
+    <p style="background-color: Gray">
+        .</p>
+    <table width="100%">
+        <tr>
+            <th colspan="3">
+                <b>@livro.Titulo</b>
+            </th>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td valign="top" rowspan="3" style="width: 50%">
+                <b>@Resources.Admin_CRUD_Livro_Sinopse: </b><span title="@livro.Sinopse">
+                    @BP.Comum.Utils.DiminuirString(livro.Sinopse, 200)
+                </span>
+            </td>
+            <td rowspan="3" valign="top" align="right" style="padding-right: 20px">
+                <input type="button" id="btnAlugar" value="@Resources.Carrinho_Adicionar" onclick="adicionarAoCarrinho(@livro.CodLivro);" />
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20%">
+                <b>@Resources.Admin_CRUD_Livro_Autor: </b>@livro.Autor
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>@Resources.Admin_CRUD_Livro_Genero: </b>@livro.Genero
+            </td>
+        </tr>
+    </table>
+}

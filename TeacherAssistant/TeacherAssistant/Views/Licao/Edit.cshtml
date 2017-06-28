@@ -1,0 +1,33 @@
+﻿@model TeacherAssistant.Models.Licao
+@{
+    ViewBag.Title = "Criar Nova Lição";
+}
+@section Header {
+    @Html.ActionLink("Voltar", "Index", "Licao", null, new { data_icon = "arrow-l", data_rel = "back" })
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Detalhes</li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Titulo)
+            @Html.EditorFor(model => model.Titulo)
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Descricao)
+            @Html.EditorFor(model => model.Descricao)
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Questionario)
+            @Html.DropDownListFor(model => model.Questionario.Id, ViewBag.Questionarios as SelectList, "Selecione o Questionário", null)
+        </li>
+        <li data-role="fieldcontain">
+            <input type="submit" value="Salvar" />
+        </li>
+    </ul>
+}

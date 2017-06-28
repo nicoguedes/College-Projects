@@ -1,0 +1,41 @@
+﻿@using TeacherAssistant.Util
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Teacher Assistant - @ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    @Styles.Render("~/Content/themes/base/css", "~/Content/mobileCss", "~/Content/css", "~/Scripts/plugins/jqTe/jquery-te-1.4.0.css")
+    @Scripts.Render("~/bundles/modernizr", "~/bundles/jquery", "~/bundles/jqueryui", "~/bundles/jquerymobile", "~/Scripts/plugins/maskedInput/jquery.maskedinput.min.js", "~/Scripts/plugins/jqte/jquery-te-1.4.0.min.js")
+
+    <script type="text/javascript">
+        $('.ui-page').live('pagehide', function () { $(this).remove(); });
+    </script>
+
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <div data-role="page" data-theme="b" @Html.GetPageUrl(ViewContext)>
+        <div data-role="header">
+            <h1>@ViewBag.Title</h1>
+            @if (ViewBag.ExibirHeader == null || ViewBag.ExibirHeader == true)
+            {
+                if (IsSectionDefined("Header"))
+                {
+                @RenderSection("Header")
+                }
+                else
+                { 
+                @Html.ActionLink("Início", "Index", "Home", null, new { data_icon = "home" })
+                }
+                @Html.Partial("_LoginPartial")
+            }
+        </div>
+
+        <div data-role="content">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Meu Perfil";
+}
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">Menu</li>
+    <li>@Html.ActionLink("Trocar Senha", "TrocarSenha", "Perfil")</li>
+    <li>@Html.ActionLink("Meu Perfil", "Visualizar", "Perfil", new { id = TeacherAssistant.UsuarioLogado.User.Id }, null)</li>
+</ul>

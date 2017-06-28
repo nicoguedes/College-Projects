@@ -1,0 +1,54 @@
+﻿@model TeacherAssistant.Models.Material
+@{
+    ViewBag.Title = "Incluir Material";
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval", "~/Scripts/pages/material.js")
+}
+@using (Html.BeginForm("Create", "Material", FormMethod.Post, new { enctype = "multipart/form-data", @data_ajax = "false" }))
+{
+    @Html.ValidationSummary()
+    if (Model.Aula != null)
+    {
+    @Html.HiddenFor(model => model.Aula.Id)
+    }
+    if (Model.Licao != null)
+    {
+    @Html.HiddenFor(model => model.Licao.Id)
+    }
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Detalhes</li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Titulo)
+            @Html.EditorFor(model => model.Titulo)
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Descricao)
+            @Html.TextAreaFor(model => model.Descricao)
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Tipo)
+            @Html.DropDownList("Tipo")
+        </li>
+        <li data-role="fieldcontain">
+            <label>
+                Arquivo
+                <input type="file" id="ArquivoMaterial" name="ArquivoMaterial" />
+            </label>
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Url)
+            @Html.EditorFor(model => model.Url)
+        </li>
+        @if (TeacherAssistant.UsuarioLogado.User.Tipo == (byte)TeacherAssistant.TipoUsuario.Professor)
+        {
+            <li data-role="fieldcontain">
+                @Html.LabelFor(model => model.Visivel)
+                @Html.EditorFor(model => model.Visivel)
+            </li>    
+        }
+        <li data-role="fieldcontain">
+            <input type="submit" value="Salvar" />
+        </li>
+    </ul>
+}

@@ -1,0 +1,4 @@
+﻿@if (TeacherAssistant.UsuarioLogado.User != null)
+{
+    @Html.ActionLink("Sair", "Sair", "Login", routeValues: null, htmlAttributes: new { data_icon = "delete" })
+}

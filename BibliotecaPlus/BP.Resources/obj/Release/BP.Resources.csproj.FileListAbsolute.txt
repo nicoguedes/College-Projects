@@ -1,0 +1,27 @@
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\bin\Release\BP.Resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\bin\Release\BP.Resources.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\bin\Release\en\BP.Resources.resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\bin\Release\es\BP.Resources.resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\ResolveAssemblyReference.cache
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.Resources.en.resources
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.Resources.es.resources
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\GenerateResource.read.1.tlog
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\GenerateResource.write.1.tlog
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\en\BP.Resources.resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\es\BP.Resources.resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.Resources.resources
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\bin\Release\BP.Resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\bin\Release\BP.Resources.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\bin\Release\en\BP.Resources.resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\bin\Release\es\BP.Resources.resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.Resources.resources
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.Resources.en.resources
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.Resources.es.resources
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.csproj.GenerateResource.Cache
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\obj\Release\en\BP.Resources.resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\obj\Release\es\BP.Resources.resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Resources\obj\Release\BP.Resources.pdb

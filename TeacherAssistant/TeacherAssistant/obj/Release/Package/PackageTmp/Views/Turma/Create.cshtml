@@ -1,0 +1,26 @@
+﻿@model TeacherAssistant.Models.Turma
+
+@{
+    ViewBag.Title = "Incluir Turma";
+}
+
+@section Header {
+    @Html.ActionLink("Voltar", "Index", "Turma", null, new { data_icon = "arrow-l", data_rel = "back" })
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary()
+
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Detalhes</li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Nome)
+            @Html.EditorFor(model => model.Nome)
+        </li>
+        <li data-role="fieldcontain">
+            <input type="submit" value="Salvar" />
+        </li>
+    </ul>
+}

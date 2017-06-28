@@ -1,0 +1,22 @@
+﻿@model TeacherAssistant.Models.Turma
+
+@{
+    ViewBag.Title = "Alunos da Turma";
+}
+
+<b>Professor:</b>
+<p>
+    @Html.ActionLink(Model.Professor.Nome, "Visualizar", "Perfil", new { id = Model.Professor.Id }, null)
+</p>
+
+<ul data-role="listview" data-inset="true">
+    @foreach (var aluno in Model.Alunos)
+    {
+        <li><a href="@Url.Action("Visualizar", "Perfil", new { id = aluno.Id })">
+            <img src="@Url.Content(aluno.CaminhoFoto)" width="80" height="80">
+            <h2>@aluno.Nome</h2>
+        </a>
+        </li>
+    }
+</ul>
+

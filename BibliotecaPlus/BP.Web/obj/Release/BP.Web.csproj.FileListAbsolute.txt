@@ -1,0 +1,63 @@
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Mapping\Livro.hbm.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Mapping\Aluguel.hbm.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Mapping\Usuario.hbm.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Mapping\Carrinho.hbm.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\hibernate.cfg.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\BP.Web.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\BP.Web.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\BP.Comum.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\BP.Resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Dominio.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\EntityFramework.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Integracao.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\NHibernate.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Iesi.Collections.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\BP.Comum.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Dominio.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Integracao.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\BP.Resources.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\EntityFramework.xml
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\en\BP.Resources.resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\es\BP.Resources.resources.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\bin\Integracao.XmlSerializers.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\obj\Release\ResolveAssemblyReference.cache
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\obj\Release\BP.Web.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Web\obj\Release\BP.Web.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Mapping\Livro.hbm.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Mapping\Aluguel.hbm.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Mapping\Usuario.hbm.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Mapping\Carrinho.hbm.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\hibernate.cfg.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\BP.Web.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\BP.Web.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\BP.Comum.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\BP.Resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Dominio.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\EntityFramework.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Integracao.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.Helpers.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.Mvc.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.Razor.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.WebPages.Deployment.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.WebPages.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.WebPages.Razor.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\NHibernate.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Iesi.Collections.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\BP.Comum.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Dominio.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Integracao.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\BP.Resources.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\EntityFramework.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.Helpers.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.Mvc.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.Razor.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.WebPages.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.WebPages.Deployment.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\System.Web.WebPages.Razor.xml
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\en\BP.Resources.resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\es\BP.Resources.resources.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\bin\Integracao.XmlSerializers.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\obj\Release\BP.Web.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\obj\Release\BP.Web.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Web\obj\Release\BP.Web.pdb

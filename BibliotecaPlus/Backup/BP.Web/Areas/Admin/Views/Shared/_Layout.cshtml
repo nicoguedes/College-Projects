@@ -1,0 +1,63 @@
+﻿@using BP.Resources
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/header_menu.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var idMenuAtivo;
+
+            if (window.location.toString().indexOf("Livro") > 0)
+                idMenuAtivo = "menuLivros";
+            else
+                idMenuAtivo = "menuInicio";
+
+            $("#" + idMenuAtivo).addClass("active");
+        });
+    </script>
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <div id="title">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <h1>
+                                Biblioteca Plus</h1>
+                        </td>
+                        <td align="center">
+                            @Html.Partial("~/Views/Shared/SelecaoIdioma.cshtml")
+                        </td>
+                        <td align="right" valign="top" style="padding-right: 20px;">
+                            <span>@string.Format(Resources.MenuPrincipal_BoasVindas, BP.Web.Models.UsuarioLogado.Usuario.Nome)
+                                | <a href="@Url.Action("Index", "Emprestimo", new { area = "" })">
+                                    @Resources.MenuPrincipal_Emprestimos</a> | <a href='@Url.Action("Logoff", "Login", new { area = "" })'>
+                                        @Resources.MenuPrincipal_Sair
+                                    </a></span>
+                            <br />
+                            @Html.ActionLink(@Resources.MenuPrincipal_RetornarAoSite, "Index", new { controller = "Home", area = "" })
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="headermenu">
+                <ul>
+                    <li id="menuInicio"><a href="@Url.Action("Index", "Home", new { area = "Admin" })"><span>@Resources.MenuPrincipal_HomePage</span></a></li>
+                    <li id="menuLivros"><a href="@Url.Action("Index", "Livro", new { area = "Admin" })">
+                        <span>
+                            @Resources.MenuPrincipal_Livros</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            @RenderBody()
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+</body>
+</html>

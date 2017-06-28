@@ -1,0 +1,41 @@
+﻿@model TeacherAssistant.Models.Usuario
+@{
+    ViewBag.Title = "Cadastrar Novo Usuário";
+}
+@section Header {
+    @Html.ActionLink("Voltar", "Index", "Usuario", null, new { data_icon = "arrow-l", data_rel = "back" })
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    @Html.HiddenFor(model => model.Id)
+    @Html.HiddenFor(model => model.Login)
+    
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Detalhes</li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Nome)
+            @Html.EditorFor(model => model.Nome)
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Email)
+            @Html.EditorFor(model => model.Email)
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Senha)
+            @Html.PasswordFor(model => model.Senha)
+        </li>
+        
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Matricula)
+            @Html.EditorFor(model => model.Matricula)
+        </li>
+        <li data-role="fieldcontain">
+            <input type="submit" value="Salvar" />
+        </li>
+    </ul>
+}

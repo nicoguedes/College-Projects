@@ -1,0 +1,10 @@
+D:\Desenvolvimento\BibliotecaPlus\BP.Comum\bin\Release\BP.Comum.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Comum\bin\Release\BP.Comum.pdb
+D:\Desenvolvimento\BibliotecaPlus\BP.Comum\obj\Release\ResolveAssemblyReference.cache
+D:\Desenvolvimento\BibliotecaPlus\BP.Comum\obj\Release\BP.Comum.dll
+D:\Desenvolvimento\BibliotecaPlus\BP.Comum\obj\Release\BP.Comum.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Comum\bin\Release\BP.Comum.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Comum\bin\Release\BP.Comum.pdb
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Comum\obj\Release\BP.Comum.csprojResolveAssemblyReference.cache
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Comum\obj\Release\BP.Comum.dll
+D:\Dropbox\Dropbox\PUC\6º Periodo\Tecnologias Web\Biblioteca\BibliotecaPlus_04-11-2012\BibliotecaPlus\BP.Comum\obj\Release\BP.Comum.pdb

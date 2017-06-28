@@ -1,0 +1,32 @@
+﻿@model TeacherAssistant.Models.Turma
+@{
+    ViewBag.Title = "Alunos da Turma " + Model.Nome;
+}
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    int index = 0;
+    foreach (SelectListItem aluno in ViewBag.Alunos)
+    {
+        
+        if (aluno.Selected)
+        {
+    <label>
+        <input type="checkbox" name="Alunos[@index].Id" value="@aluno.Value" checked="checked" />
+        @aluno.Text
+    </label>
+        }
+        else
+        {
+    <label>
+        <input type="checkbox" name="Alunos[@index].Id" value="@aluno.Value" />
+        @aluno.Text
+    </label>    
+        }
+
+        index++;
+    }
+    
+    <input type="submit" value="Salvar" />
+}

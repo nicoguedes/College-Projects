@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Dominio.Livro>
+@using BP.Resources
+@{
+    ViewBag.Title = @Resources.MenuPrincipal_Livros;
+}
+<h2>@Resources.MenuPrincipal_Livros</h2>
+<p>
+    @Html.ActionLink(@Resources.Link_Novo, "Edit")
+</p>
+<table class="gridTable">
+    <tr>
+        <th>
+        </th>
+        <th>
+            @Resources.Admin_CRUD_Livro_TituloLivro
+        </th>
+        <th>
+            @Resources.Admin_CRUD_Livro_Autor
+        </th>
+        <th>
+            @Resources.Admin_CRUD_Livro_ValorDia
+        </th>
+        <th>
+            @Resources.Admin_CRUD_Livro_QuantidadeDisponivel
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(@Resources.Link_Editar, "Edit", new { id = item.CodLivro }) |
+                @Html.ActionLink(@Resources.Link_Excluir, "Delete", new { id = item.CodLivro })
+            </td>
+            <td>
+                @item.Titulo
+            </td>
+            <td>
+                @item.Autor
+            </td>
+            <td>
+                @item.ValorDia
+            </td>
+            <td>
+                @item.QuantidadeDisponivel
+            </td>
+        </tr>
+    }
+</table>

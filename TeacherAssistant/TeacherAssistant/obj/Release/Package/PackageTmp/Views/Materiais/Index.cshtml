@@ -1,0 +1,29 @@
+﻿@model IList<TeacherAssistant.Models.Material>
+@{
+    ViewBag.Title = ViewBag.Titulo;
+}
+<p>
+    @Html.ActionLink("Sugerir material", "Create", "Material", (object)ViewBag.RouteValues, new { data_role = "button", data_icon = "add" })
+</p>
+<h3>
+    @ViewBag.Titulo
+</h3>
+<p>
+    Ordenar por:
+</p>
+<div data-role="navbar">
+    <ul>
+        <li><a href="@Url.Action("Index", new { idAula = ViewBag.IdAula, idLicao = ViewBag.IdLicao, ordenacao = (byte)TeacherAssistant.OrdenacaoMaterial.Curtidas })">Aprovações</a></li>
+        <li><a href="@Url.Action("Index", new { idAula = ViewBag.IdAula, idLicao = ViewBag.IdLicao, ordenacao = (byte)TeacherAssistant.OrdenacaoMaterial.DataInclusao })">Data</a></li>
+    </ul>
+</div>
+<br />
+<br />
+<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Filtrar materiais">
+    @foreach (var material in Model)
+    {
+        <li data-icon="star">
+            @Html.ActionLink(material.Titulo, "Visualizar", new { id = material.Id })
+            <span class="ui-li-count">@material.Curtidas.Count</span> </li>
+    }
+</ul>

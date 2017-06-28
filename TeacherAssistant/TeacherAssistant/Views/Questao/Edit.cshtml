@@ -1,0 +1,86 @@
+﻿@model TeacherAssistant.Models.Questao
+@{
+    ViewBag.Title = "Editar Questão #" + Model.Tag;
+}
+@section Header {
+    @Html.ActionLink("Voltar", "Index", "Questao", null, new { data_icon = "arrow-l", data_rel = "back" })
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    
+    @Html.HiddenFor(model => model.Id)
+    
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Detalhes</li>
+        <li data-role="fieldcontain">
+            <label>
+                Enunciado:
+                @Html.TextAreaFor(model => model.Enunciado)
+            </label>
+        </li>
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Tag)
+            @Html.TextBoxFor(model => model.Tag)
+        </li>
+        <li data-role="fieldcontain">
+            <label>
+                @Html.LabelFor(model => model.Tag)
+                @Html.TextBoxFor(model => model.Tag)
+            </label>
+        </li>
+        <li data-role="list-divider">Alternativas - Marque a opção correta</li>
+        <li data-role="fieldcontain">
+            <label>
+                <input type="radio" name="RespostaCorreta" value="A" />
+                Opção A é a resposta correta?
+            </label>
+            <br />
+            <label>
+                a) @Html.TextAreaFor(model => model.AlternativaA)</label>
+        </li>
+        <li data-role="fieldcontain">
+            <label>
+                <input type="radio" name="RespostaCorreta" value="B" />
+                Opção B é a resposta correta?
+            </label>
+            <br />
+            <label>
+                b) @Html.TextAreaFor(model => model.AlternativaB)</label>
+        </li>
+        <li data-role="fieldcontain">
+            <label>
+                <input type="radio" name="RespostaCorreta" value="C" />
+                Opção C é a resposta correta?
+            </label>
+            <br />
+            <label>
+                c) @Html.TextAreaFor(model => model.AlternativaC)</label>
+        </li>
+        <li data-role="fieldcontain">
+            <label>
+                <input type="radio" name="RespostaCorreta" value="D" />
+                Opção D é a resposta correta?
+            </label>
+            <br />
+            <label>
+                d)
+                @Html.TextAreaFor(model => model.AlternativaD)</label>
+        </li>
+        <li data-role="fieldcontain">
+            <label>
+                <input type="radio" name="RespostaCorreta" value="E" />
+                Opção E é a resposta correta?
+            </label>
+            <br />
+            <label>
+                e) @Html.TextAreaFor(model => model.AlternativaE)</label>
+        </li>
+        <li data-role="fieldcontain">
+            <input type="submit" value="Salvar" />
+        </li>
+    </ul>
+}

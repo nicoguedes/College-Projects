@@ -1,0 +1,20 @@
+﻿@model TeacherAssistant.Models.Material
+@{
+    ViewBag.Title = "Aprovações - " + Model.Titulo;
+}
+<h3>
+    Usuários que aprovaram o material</h3>
+@if (Model.Curtidas.Any())
+{
+    foreach (TeacherAssistant.Models.Usuario usuario in Model.Curtidas)
+    {
+    <p>
+        @Html.ActionLink(usuario.Nome, "Visualizar", "Perfil", new { id = usuario.Id }, null)
+    </p>
+    }
+}
+else
+{
+    <p>
+        O material "@Model.Titulo" não possui nenhuma aprovação no momento.</p>
+}

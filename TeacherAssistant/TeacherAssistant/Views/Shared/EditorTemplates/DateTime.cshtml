@@ -1,0 +1,21 @@
+﻿@model System.DateTime?
+@{
+    Layout = null;
+    bool editarDataHora = ViewData["editarDataHora"] != null ? Convert.ToBoolean(ViewData["editarDataHora"]) : false;
+}
+
+<script  type="text/javascript">
+    $('#@Html.IdFor(m => m)').mask('99/99/9999 99:99');
+</script>
+
+@Html.TextBoxFor(m => m)
+
+@*@if (editarDataHora)
+{
+    <input type="datetime-local" id="@Html.IdFor(m => m)" name="@Html.NameFor(m => m)" />    
+}
+else
+{ 
+    <input type="date" id="@Html.IdFor(m => m)" name="@Html.NameFor(m => m)" />    
+}
+*@

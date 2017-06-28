@@ -1,0 +1,85 @@
+﻿@model TeacherAssistant.ViewModels.DadosHomePage
+@{
+    ViewBag.Title = "Início";
+}
+@section Header {
+    @Html.ActionLink("Perfil", "Index", "Perfil", null, new { data_icon = "gear" })
+}
+@if (Model.MensagensNaoLidas.Any())
+{
+    <p>
+        Olá @TeacherAssistant.UsuarioLogado.User.Nome, você possui @Model.MensagensNaoLidas.Count
+        mensagem (ns) não lida (s).
+    </p>
+}
+
+<ul data-role="listview" data-inset="true">
+
+    <li data-role="list-divider">Menu</li>
+    <li>@Html.ActionLink("Ler Mensagens", "Index", "Mensagem")</li>
+    <li>@Html.ActionLink("Minha Turma", "MinhaTurma", "Perfil")</li>
+    @if (TeacherAssistant.UsuarioLogado.User.Tipo == (byte)TeacherAssistant.TipoUsuario.Professor)
+    {
+        <li data-role="list-divider">Menu do Professor</li>
+        <li>@Html.ActionLink("Trocar Turma | Atual: " + TeacherAssistant.UsuarioLogado.Turma.Nome, "Index", "SelecionarTurma")</li>
+        <li>@Html.ActionLink("Turmas", "Index", "Turma")</li>
+        <li>@Html.ActionLink("Lições", "Index", "Licao")</li>
+        <li>@Html.ActionLink("Aulas", "Index", "Aula")</li>
+        <li>@Html.ActionLink("Questionários", "Index", "Questionario")</li>
+        <li>@Html.ActionLink("Base de Questões", "Index", "Questao")</li>
+        <li>@Html.ActionLink("Usuários", "Index", "Usuario")</li>
+    }
+
+</ul>
+@if (Model.Licoes.Any())
+{
+    <p>
+        <b>Lições:</b>
+    </p>
+    foreach (TeacherAssistant.Models.Licao licao in Model.Licoes)
+    {
+    <div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="b">
+        <h4>@licao.Titulo</h4>
+        <p>
+            @licao.Descricao
+        </p>
+        @if (licao.Materiais.Any())
+        {
+            <a href="@Url.Action("Index", "Materiais", new { idLicao = licao.Id })">
+                <img alt="Materiais" src="@Url.Content("~/Content/images/material.png")" width="20px" height="20px"/>
+                Materiais da Lição (@licao.GetMateriaisVisiveis().Count)</a><span> |</span>
+        }
+        <a href="@Url.Action("Index", "Forum", new { id = licao.Forum.Id })">
+            <img alt="Mensagens" src="@Url.Content("~/Content/images/mensagem.png")" width="20px" height="20px"/>
+            Mensagens (@licao.Forum.Mensagens.Count)</a>
+        @if (licao.Aulas.Any())
+        {
+            <p>
+                <b>Aulas:</b>
+            </p>
+            <ul>
+                @foreach (var aula in licao.Aulas)
+                {
+                    <li><span title="@aula.Descricao">@aula.Titulo</span> |
+                        @if (aula.Materiais.Any())
+                        {
+                            <a href="@Url.Action("Index", "Materiais", new { idAula = aula.Id })">
+                                <img alt="Materiais" src="@Url.Content("~/Content/images/material.png")" width="20px" height="20px"/>
+                                Materiais (@aula.GetMateriaisVisiveis().Count) </a> <span> |</span>
+                        }
+                        <a href="@Url.Action("Index", "Forum", new { id = aula.Forum.Id })">
+                            <img alt="Mensagens" src="@Url.Content("~/Content/images/mensagem.png")" width="20px" height="20px"/>
+                            Mensagens (@aula.Forum.Mensagens.Count)</a></li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>
+                Esta lição não possui nenhuma aula cadastrada.
+            </p>
+        }
+    </div>
+    }
+
+}

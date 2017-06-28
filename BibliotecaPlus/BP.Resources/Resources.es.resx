@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Btn_Confirmar" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="CadastrarUsuario_Titulo" xml:space="preserve">
+    <value>Registrarse en el sistema</value>
+  </data>
+  <data name="CRUD_Usuario_Bairro" xml:space="preserve">
+    <value>Barrio</value>
+  </data>
+  <data name="CRUD_Usuario_CEP" xml:space="preserve">
+    <value>Código Postal</value>
+  </data>
+  <data name="CRUD_Usuario_Cidade" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="CRUD_Usuario_DataNascimento" xml:space="preserve">
+    <value>Fecha de Nacimiento</value>
+  </data>
+  <data name="CRUD_Usuario_Estado" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="CRUD_Usuario_LoginJaUtilizado" xml:space="preserve">
+    <value>Login ya utilizado.</value>
+  </data>
+  <data name="CRUD_Usuario_Logradouro" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="CRUD_Usuario_Nome" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="CRUD_Usuario_NumeroEndereco" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="CRUD_Usuario_Senha" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="CRUD_Usuario_Telefone" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="EsqueciMinhaSenha_EnviarMinhaSenha" xml:space="preserve">
+    <value>Enviar mi contraseña de mi correo electrónico</value>
+  </data>
+  <data name="EsqueciMinhaSenha_UsuarioInexistente" xml:space="preserve">
+    <value>El usuario introducido no existe.</value>
+  </data>
+  <data name="Login_AcessoNaoAutorizado" xml:space="preserve">
+    <value>Acceso no autorizado</value>
+  </data>
+  <data name="Login_Cadastrar" xml:space="preserve">
+    <value>Registra</value>
+  </data>
+  <data name="Login_Entrar" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="Login_EntrarNoSistema" xml:space="preserve">
+    <value>Acceder</value>
+  </data>
+  <data name="Login_EsqueciMinhaSenha" xml:space="preserve">
+    <value>Olvidé mi contraseña</value>
+  </data>
+  <data name="Login_Senha" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="Login_Usuario" xml:space="preserve">
+    <value>Usuario:</value>
+  </data>
+  <data name="Login_UsuarioOuSenhaInvalidos" xml:space="preserve">
+    <value>Nombre de usuario o contraseña no válidos</value>
+  </data>
+  <data name="Login_VoceNaoPossuiPermissao" xml:space="preserve">
+    <value>Usted no tiene acceso a este recurso.</value>
+  </data>
+  <data name="Login_VoltarPaginaInicial" xml:space="preserve">
+    <value>Volver a la portada</value>
+  </data>
+  <data name="MenuPrincipal_BoasVindas" xml:space="preserve">
+    <value>Hola {0}</value>
+  </data>
+  <data name="MenuPrincipal_Classico" xml:space="preserve">
+    <value>Clássico</value>
+  </data>
+  <data name="MenuPrincipal_Drama" xml:space="preserve">
+    <value>Drama</value>
+  </data>
+  <data name="MenuPrincipal_Emprestimos" xml:space="preserve">
+    <value>Mis préstamos</value>
+  </data>
+  <data name="MenuPrincipal_HomePage" xml:space="preserve">
+    <value>Página Principal</value>
+  </data>
+  <data name="MenuPrincipal_Romance" xml:space="preserve">
+    <value>Romanza</value>
+  </data>
+  <data name="MenuPrincipal_Sair" xml:space="preserve">
+    <value>Lárgate</value>
+  </data>
+  <data name="MenuPrincipal_SelecionarIdioma" xml:space="preserve">
+    <value>Seleccione su idioma:</value>
+  </data>
+  <data name="MenuPrincipal_Terror" xml:space="preserve">
+    <value>Terror</value>
+  </data>
+  <data name="EsqueciMinhaSenha_SenhaEnviadaComSucesso" xml:space="preserve">
+    <value>Su contraseña ha sido enviada a la dirección de correo electrónico registrada en el sitio web con éxito!</value>
+  </data>
+  <data name="Admin_AreaAdministrador" xml:space="preserve">
+    <value>Área Administrativa</value>
+  </data>
+  <data name="Admin_CRUD_Livro_Autor" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="Admin_CRUD_Livro_Genero" xml:space="preserve">
+    <value>Género</value>
+  </data>
+  <data name="Admin_CRUD_Livro_QuantidadeDisponivel" xml:space="preserve">
+    <value>Número de libros disponibles</value>
+  </data>
+  <data name="Admin_CRUD_Livro_Sinopse" xml:space="preserve">
+    <value>Sinopsis</value>
+  </data>
+  <data name="Admin_CRUD_Livro_TituloLivro" xml:space="preserve">
+    <value>Título del Libro</value>
+  </data>
+  <data name="Admin_CRUD_Livro_ValorDia" xml:space="preserve">
+    <value>Valor Diario</value>
+  </data>
+  <data name="Admin_Livro_CadastrarNovoLivro" xml:space="preserve">
+    <value>Registrar nuevo libro</value>
+  </data>
+  <data name="Admin_Livro_DadosLivro" xml:space="preserve">
+    <value>Información del libro</value>
+  </data>
+  <data name="Admin_Livro_EditarLivro" xml:space="preserve">
+    <value>Editar libro {0}</value>
+  </data>
+  <data name="Aluguel_NenhumLivroSelecionado" xml:space="preserve">
+    <value>Ningún libro seleccionado para el alquiler.</value>
+  </data>
+  <data name="Btn_Salvar" xml:space="preserve">
+    <value>Grabar</value>
+  </data>
+  <data name="Carrinho_Adicionar" xml:space="preserve">
+    <value>Añadir a la cesta</value>
+  </data>
+  <data name="Carrinho_CodigoLivroInvalido" xml:space="preserve">
+    <value>Libro inválido</value>
+  </data>
+  <data name="Carrinho_ErroAoAdicionarLivro" xml:space="preserve">
+    <value>Error al intentar agregar libro al carrito.</value>
+  </data>
+  <data name="Carrinho_Inexistente" xml:space="preserve">
+    <value>El usuario no ha registrado carrito.</value>
+  </data>
+  <data name="Carrinho_LivroAdicionadoComSucesso" xml:space="preserve">
+    <value>Libro añadido a la cesta con éxito!</value>
+  </data>
+  <data name="Carrinho_LivroJaAdicionado" xml:space="preserve">
+    <value>Este libro ha sido añadido a su carrito de compras.</value>
+  </data>
+  <data name="Carrinho_LivroNaoDisponivel" xml:space="preserve">
+    <value>Libro no disponible para el alquiler.</value>
+  </data>
+  <data name="Carrinho_LivroRemovidoComSucesso" xml:space="preserve">
+    <value>Libro eliminado con éxito del carrito</value>
+  </data>
+  <data name="Carrinho_MeuCarrinho" xml:space="preserve">
+    <value>Mi carrito</value>
+  </data>
+  <data name="Carrinho_RemoverLivro" xml:space="preserve">
+    <value>Borrar libro del carrito</value>
+  </data>
+  <data name="Link_Editar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Link_Excluir" xml:space="preserve">
+    <value>Borrar</value>
+  </data>
+  <data name="Link_Novo" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="Link_VoltarParaLista" xml:space="preserve">
+    <value>Volver a la lista</value>
+  </data>
+  <data name="MenuPrincipal_Livros" xml:space="preserve">
+    <value>Libros</value>
+  </data>
+  <data name="MenuPrincipal_Outros" xml:space="preserve">
+    <value>Otro</value>
+  </data>
+  <data name="MenuPrincipal_RetornarAoSite" xml:space="preserve">
+    <value>Volver al sitio</value>
+  </data>
+</root>

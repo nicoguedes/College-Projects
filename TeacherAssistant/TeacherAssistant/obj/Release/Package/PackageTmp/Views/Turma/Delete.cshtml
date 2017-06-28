@@ -1,0 +1,21 @@
+﻿@model TeacherAssistant.Models.Turma
+
+@{
+    ViewBag.Title = "Excluir";
+    ViewBag.ExibirHeader = false;
+}
+
+<h3>Tem certeza de que deseja excluir o item abaixo?</h3>
+<fieldset>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Excluir" />
+    </p>
+}

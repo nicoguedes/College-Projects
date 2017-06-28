@@ -1,0 +1,55 @@
+﻿@model IEnumerable<TeacherAssistant.Models.Questao>
+
+@{
+    ViewBag.Title = "Questões";
+}
+
+<p>
+    @Html.ActionLink("Incluir Questão", "Create", null, new { data_role = "button", data_icon = "plus" })
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Enunciado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tag)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Enunciado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RespostaCorreta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlternativaA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlternativaB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlternativaC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlternativaD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlternativaE)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tag)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Excluir", "Delete", new { id = item.Id }, new { data_rel = "dialog" })
+            </td>
+        </tr>
+    }
+
+</table>

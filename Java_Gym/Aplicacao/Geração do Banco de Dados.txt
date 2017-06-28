@@ -1,0 +1,3 @@
+Baixar o jar "sqlite-jdbc-3.7.2.jar" para que o projeto funcione.
+
+Não incluímos o mesmo na postagem do trabalho pois excederia os 3 MB de limite do SGA.

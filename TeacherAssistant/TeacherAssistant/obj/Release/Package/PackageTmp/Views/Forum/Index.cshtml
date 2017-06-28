@@ -1,0 +1,22 @@
+﻿@model IList<TeacherAssistant.Models.Mensagem>
+@{
+    ViewBag.Title = ViewBag.Titulo + " - Fórum";
+}
+<p>
+    @Html.ActionLink("Nova Mensagem", "EnviarMensagem", new { idForum = ViewBag.ForumId })
+</p>
+@if (Model == null || Model.Count <= 0)
+{
+    <p>Nenhuma mensagem enviada neste Fórum.</p>
+}
+else
+{ 
+    <ul data-role="listview" data-inset="true">
+        @foreach (var mensagem in Model)
+        {
+            <li><a href="@Url.Action("VisualizarMensagem", "Forum", new { id = mensagem.Id })">Por:
+                @mensagem.Usuario.Login | @mensagem.Assunto | @mensagem.DataEnvio.ToString("dd/MM/yyyy HH:mm:ss")<span
+                    class="ui-li-count">@mensagem.Filhos.Count</span> </a></li>
+        }
+    </ul>
+}

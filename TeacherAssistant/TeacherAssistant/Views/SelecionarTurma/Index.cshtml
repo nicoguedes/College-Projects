@@ -1,0 +1,28 @@
+﻿@model TeacherAssistant.ViewModels.SelecaoTurma
+@{
+    ViewBag.Title = "Selecionar Turma";
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.MensagemValidacao))
+{
+    <p>@ViewBag.MensagemValidacao</p>
+}
+else
+{
+    using (Html.BeginForm())
+    {
+    @Html.ValidationSummary()
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Selecione a Turma</li>
+        <li data-role="fieldcontain">
+            <label>
+                Turma:
+                @Html.DropDownList("TurmaId")
+            </label>
+        </li>
+        <li data-role="fieldcontain">
+            <input type="submit" value="Selecionar" />
+        </li>
+    </ul>
+    }
+}

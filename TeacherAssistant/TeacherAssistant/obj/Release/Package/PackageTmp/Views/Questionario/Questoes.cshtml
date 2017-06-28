@@ -1,0 +1,34 @@
+﻿@model TeacherAssistant.Models.Questionario
+@{
+    ViewBag.Title = "Questões do Questionário " + Model.Titulo;
+    int index = 0;
+}
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    <input type="submit" value="Salvar" />
+    <ul data-role="listview" data-inset="true"  data-filter="true">
+        @foreach (IGrouping<string, TeacherAssistant.Models.Questao> agrupamento in ViewBag.Questoes)
+        {   
+            <li data-role="list-divider">@agrupamento.Key</li> 
+            foreach (TeacherAssistant.Models.Questao questao in agrupamento)
+            {
+            <li>
+                <label>
+                    @if (questao.Selected)
+                    {
+                        <input type="checkbox" name="Questoes[@index].Id" value="@questao.Id" checked="checked" />
+                    }
+                    else
+                    {
+                        <input type="checkbox" name="Questoes[@index].Id" value="@questao.Id" />
+                    }
+                    @questao.Enunciado
+                </label>
+            </li>
+            }
+            index++;
+        }
+    </ul>
+}

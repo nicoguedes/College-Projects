@@ -1,0 +1,42 @@
+﻿@model IList<TeacherAssistant.Models.MensagemUsuario>
+@{
+    ViewBag.Title = "Mensagens";
+}
+<h3>Mensagens recebidas</h3>
+@if (Model.Any())
+{
+    <ul data-role="listview" data-inset="true">
+        @foreach (var mensagem in Model)
+        {
+            string mensagemNova = !mensagem.Lida ? "(Nova)" : string.Empty;
+            <li><a data-theme="e" href="@Url.Action("Visualizar", "Mensagem", new { id = mensagem.Id })">
+                @mensagemNova Por:
+                @mensagem.Remetente.Login | @mensagem.Assunto | @mensagem.DataEnvio.ToString("dd/MM/yyyy HH:mm:ss")</a>
+            </li>
+        }
+    </ul>
+}
+else
+{ 
+    <p>
+        Nenhuma mensagem recebida.
+    </p>
+}
+
+<h3>Mensagens enviadas</h3>
+@if (ViewBag.MensagensEnviadas.Count > 0)
+{
+    foreach (TeacherAssistant.Models.MensagemUsuario mensagem in ViewBag.MensagensEnviadas)
+    {
+    <p><b>Enviada para: @mensagem.Destinatario.Nome em: @mensagem.DataEnvio.ToString("dd/MM/yyyy - HH:mm")</b></p>
+    <p>
+        @Html.Raw(mensagem.Texto)
+    </p>
+    }
+}
+else
+{
+    <p>
+        Nenhuma mensagem enviada.
+    </p>
+}

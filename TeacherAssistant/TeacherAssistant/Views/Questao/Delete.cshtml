@@ -1,0 +1,68 @@
+﻿@model TeacherAssistant.Models.Questao
+@{
+    ViewBag.Title = "Excluir";
+    ViewBag.ExibirHeader = false;
+}
+
+<h3>Tem certeza de que deseja excluir o item abaixo?</h3>
+<fieldset>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Enunciado)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Enunciado)
+    </div>
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.RespostaCorreta)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.RespostaCorreta)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AlternativaA)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AlternativaA)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AlternativaB)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AlternativaB)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AlternativaC)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AlternativaC)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AlternativaD)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AlternativaD)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AlternativaE)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AlternativaE)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Tag)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Tag)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Excluir" />
+    </p>
+}

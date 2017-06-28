@@ -1,0 +1,104 @@
+﻿@model Dominio.DTO.AluguelDTO
+@using BP.Resources
+@{
+    ViewBag.Title = "Index";
+}
+<script type="text/javascript">
+    function adicionarAoCarrinho(codigo) {
+        var jsonParameters = {};
+        jsonParameters["codigoLivro"] = codigo;
+        $.ajax({
+            data: jsonParameters,
+            url: '@Url.Action("RemoverDoCarrinho", "Carrinho", new { area = "" })',
+            type: 'POST',
+            success: function (data) {
+                document.location = document.location;
+
+            }
+        });
+    }
+
+    function efetuarAluguel() {
+        if (confirm('@Resources.Aluguel_DesejaAlugar')) {
+            $("#frmAluguel").submit();
+        }
+    }
+</script>
+@if (Model.Aluguel != null)
+{
+    
+    <form id="frmAluguel" action="@Url.Action("EfetuarAluguel", "Carrinho", new { area = "" })">
+    <table width="100%">
+        <tr>
+            <th colspan="2">
+                <b>@Resources.Aluguel_DadosDoAluguel</b>
+            </th>
+        </tr>
+        <tr align="center">
+            <td>
+                <b>@Resources.Aluguel_DataParaDevolucao:</b>
+                @Model.Aluguel.DataVencimentoDevolucao
+                <br />
+                <b>@Resources.Aluguel_ValorAluguel:</b>
+                @Model.Aluguel.ValorAluguel
+            </td>
+            <td>
+                <b>@Resources.Aluguel_ValorFrete:</b>
+                @Model.Aluguel.ValorFrete
+                <br />
+                <b>@Resources.Aluguel_DataPrevistaEntrega</b>
+                @Model.Aluguel.DataPrevistaEntrega
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" id="btnConfirmarAluguel" value="@Resources.Aluguel_EfetuarAluguel" onclick="efetuarAluguel();" />
+            </td>
+        </tr>
+    </table>
+    </form>
+}
+@if (Model == null || Model.Carrinho.Livros == null || Model.Carrinho.Livros.Count <= 0)
+{ 
+    <p>
+        Seu Carrinho está vazio.</p>
+}
+else
+{
+    foreach (var livro in Model.Carrinho.Livros)
+    {
+    <p style="background-color: Gray">
+        .</p>
+    <table width="100%">
+        <tr>
+            <th colspan="3">
+                <b>@livro.Titulo</b>
+            </th>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td valign="top" rowspan="3" style="width: 50%">
+                <b>@Resources.Admin_CRUD_Livro_Sinopse: </b><span title="@livro.Sinopse">
+                    @BP.Comum.Utils.DiminuirString(livro.Sinopse, 200)
+                </span>
+            </td>
+            <td rowspan="3" valign="top" align="right" style="padding-right: 20px">
+                <input type="button" id="btnAlugar" value="@Resources.Carrinho_RemoverLivro" onclick="adicionarAoCarrinho(@livro.CodLivro);" />
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20%">
+                <b>@Resources.Admin_CRUD_Livro_Autor: </b>@livro.Autor
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>@Resources.Admin_CRUD_Livro_Genero: </b>@livro.Genero
+            </td>
+        </tr>
+    </table>
+    }
+
+
+}

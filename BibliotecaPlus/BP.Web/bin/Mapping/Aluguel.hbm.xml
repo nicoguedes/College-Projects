@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Dominio" namespace="Dominio">
+  <class name="Aluguel">
+    <id name="CodAluguel">
+      <generator class="native" />
+    </id>
+    <many-to-one name="Usuario" />
+    <property name="DataSolicitacao" />
+    <property name="ValorAluguel" />
+    <property name="DataPrevistaEntrega" />
+    <property name="ValorFrete" />
+    <property name="DataVencimentoDevolucao" />
+    <property name="DataDevolucao" />
+    <bag name="Livros"  table="LivroAluguel" cascade="save-update">
+      <key column="CodAluguel" />
+      <many-to-many class="Dominio.Livro" column="CodLivro" />
+    </bag>
+  </class>
+</hibernate-mapping>

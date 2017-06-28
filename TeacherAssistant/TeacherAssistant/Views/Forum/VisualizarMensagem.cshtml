@@ -1,0 +1,37 @@
+﻿@model TeacherAssistant.Models.Mensagem
+@{
+    ViewBag.Title = Model.Assunto;
+}
+@section Header {
+    @Html.ActionLink("Voltar", "Index", "Forum", new { id = Model.Forum.Id }, new { data_icon = "arrow-l", data_rel = "back" })
+}
+
+<p>
+    @Html.ActionLink("Responder", "EnviarMensagem", new { idPai = Model.Id, idForum = Model.Forum.Id }, new { data_role="button", data_icon = "back" })
+</p>
+<h4>
+    Mensagem Principal:
+</h4>
+<div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="d">
+    <h4>
+        Por: @Model.Usuario.Nome | Enviada em: @Model.DataEnvio.ToString("dd/MM/yyyy HH:mm:ss")</h4>
+    <p>
+        @Html.Raw(Model.Texto)
+    </p>
+</div>
+@if (Model.Filhos.Count > 0)
+{
+    <h4>
+        Respostas:
+    </h4>    
+}
+@foreach (var mensagem in Model.Filhos)
+{
+    <div data-role="collapsible" data-collapsed="false" data-theme="b" data-content-theme="d">
+        <h4>
+            Por: @mensagem.Usuario.Nome | Enviada em: @mensagem.DataEnvio.ToString("dd/MM/yyyy HH:mm:ss")</h4>
+        <p>
+            @Html.Raw(mensagem.Texto)
+        </p>
+    </div>    
+}

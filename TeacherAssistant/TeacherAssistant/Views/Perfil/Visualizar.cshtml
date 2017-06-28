@@ -1,0 +1,85 @@
+﻿@model TeacherAssistant.Models.Usuario
+@{
+    ViewBag.Title = "Perfil de " + Model.Nome;
+    bool isProfessorLogado = TeacherAssistant.UsuarioLogado.User.Tipo == (byte)TeacherAssistant.TipoUsuario.Professor;
+}
+@if (isProfessorLogado)
+{
+    @Html.ActionLink("Editar Dados do usuário", "Edit", "Usuario", new { id = Model.Id }, new { data_role = "button", data_icon = "gear" })
+}
+@Html.ActionLink("Enviar Mensagem", "Enviar", "Mensagem", new { id = Model.Id }, new { data_role = "button", data_icon = "add" })
+<h3>
+    Dados básicos</h3>
+@if (!string.IsNullOrEmpty(Model.CaminhoFoto))
+{
+    <img src="@Url.Content(Model.CaminhoFoto)" width="256" height="256" />
+}
+@if (Model.Id == TeacherAssistant.UsuarioLogado.User.Id)
+{
+    using (Html.BeginForm("TrocarFoto", "Perfil", FormMethod.Post, new { enctype = "multipart/form-data", @data_ajax = "false" }))
+    {
+    <ul data-role="listview" data-inset="true">
+        <li data-role="fieldcontain">
+            <label>
+                Alterar foto (tamanho ideal: 256x256)
+                <input type="file" name="Foto" id="Foto" accept="image/*" />
+            </label>
+        </li>
+        <li data-role="fieldcontain">
+            <input type="submit" value="Trocar Foto" />
+        </li>
+    </ul>
+    }
+}
+<p>
+    Nome: @Model.Nome
+</p>
+<p>
+    Login: @Model.Login
+</p>
+@if (!string.IsNullOrEmpty(Model.Matricula))
+{ 
+    <p>
+        Matrícula: @Model.Matricula
+    </p>
+}
+@if (isProfessorLogado)
+{
+
+
+    if (Model.Turmas.Any())
+    {
+    <h3>
+        Turmas em que está vinculado:
+    </h3>
+    
+    <p>
+        @foreach (var turma in Model.Turmas)
+        {
+            @Html.ActionLink(turma.Nome, "Edit", "Turma", new { id = turma.Id }, null) <span>|</span>
+                            
+        }
+    </p>    
+    }
+    else
+    { 
+    <p>@Model.Nome não está vinculado a nenhuma turma.</p>
+    }
+    if (Model.MateriaisCurtidos.Any())
+    {
+    <h3>
+        Materiais aprovados:
+    </h3>    
+    <p>
+        @foreach (var material in Model.MateriaisCurtidos)
+        {
+            @Html.ActionLink(material.Titulo, "Edit", "Material", new { id = material.Id }, null) <span>|</span>
+        }
+    </p>
+    }
+    else
+    { 
+    <p>@Model.Nome não aprovou nenhum material.</p>
+    }
+
+}

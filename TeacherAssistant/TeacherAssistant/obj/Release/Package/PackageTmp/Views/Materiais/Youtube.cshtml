@@ -1,0 +1,12 @@
+﻿@model TeacherAssistant.Models.Material
+@{
+    Layout = null;
+}
+<div class="center">
+    Assista ao vídeo abaixo:
+    <br />
+    <embed
+width="420" height="345"
+src="@string.Concat("http://youtube.com/v/", Model.Url)" type="application/x-shockwave-flash" allowfullscreen="true">
+    </embed>
+</div>

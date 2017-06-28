@@ -1,0 +1,36 @@
+﻿@model TeacherAssistant.Models.Mensagem
+
+<script type="text/javascript">
+    $(function () {
+        $('#Texto').jqte();    
+    });
+</script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+
+    @Html.HiddenFor(model => model.Forum.Id)
+    if (Model.Pai != null)
+    {
+    @Html.HiddenFor(model => model.Pai.Id)
+    }
+        
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">@ViewBag.Title</li>
+        @if (Model.Pai == null)
+        {
+            <li data-role="fieldcontain">
+                @Html.LabelFor(model => model.Assunto)
+                @Html.EditorFor(model => model.Assunto)
+            </li>
+        }
+        <li data-role="fieldcontain">
+            @Html.LabelFor(model => model.Texto)
+            @Html.TextAreaFor(model => model.Texto, 10, 40, null)
+        </li>
+        <li data-role="fieldcontain">
+            <input type="submit" value="Enviar" />
+        </li>
+    </ul>
+}

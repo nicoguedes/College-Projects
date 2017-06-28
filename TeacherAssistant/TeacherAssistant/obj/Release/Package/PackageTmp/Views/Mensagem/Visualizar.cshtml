@@ -1,0 +1,16 @@
+﻿@model TeacherAssistant.Models.MensagemUsuario
+@{
+    ViewBag.Title = Model.Assunto;
+}
+<p>
+    @Html.ActionLink("Responder", "Enviar", new { id = Model.Remetente.Id, assunto = "Re: " + Model.Assunto }, new { data_role = "button", data_icon = "back" })
+</p>
+<p>
+    Data de Envio: @Model.DataEnvio.ToString("dd/MM/yyyy - HH:mm")
+</p>
+<p>
+    Enviada por: @Model.Remetente.Nome (@Model.Remetente.Login)
+</p>
+<h3>
+    Corpo da mensagem:</h3>
+@Html.Raw(Model.Texto)
