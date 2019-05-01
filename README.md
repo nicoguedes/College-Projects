@@ -1,4 +1,4 @@
-# College-Projects
+# College Projects
 Small College projects built from 2010 to 2014.
 
 BibliotecaPlus: a multi-language ASP.NET MVC Library Application.
